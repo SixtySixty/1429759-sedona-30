@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Egor Karaulov](https://up.htmlacademy.ru/htmlcss/30/user/1429759).
-* Наставник: `Неизвестно`.
+- Студент: [Egor Karaulov](https://up.htmlacademy.ru/htmlcss/30/user/1429759).
+- Наставник: [Сайпула Валиев](https://htmlacademy.ru/profile/id227260).
 
 ---
 
