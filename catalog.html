@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Каталог</title>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="index.html">информация</a></li>
+            <li><a href="index.html">фото и видео</a></li>
+            <li><a href="index.html"><img src="https://via.placeholder.com/138x74" width="138" height="74"
+                     alt="Логотип"></a></li>
+            <li><a href="index.html">карта штата</a></li>
+            <li><a href="catalog.html">гостиницы</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <form action="https://echo.htmlacademy.ru/">
+         <fieldset>
+            <legend>Инфраструктура:</legend>
+            <label><input type="checkbox" name="pool">Бассейн</label>
+            <label><input type="checkbox" name="parking">Парковка</label>
+            <label><input type="checkbox" name="wifi">WI-FI</label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Тип жилья:</legend>
+            <label><input type="checkbox" name="hotel">Гостиница</label>
+            <label><input type="checkbox" name="motel">Мотель</label>
+            <label><input type="checkbox" name="apartment">Апартаменты</label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div>
+               <output>от 0</output>
+               <output>до 3000</output>
+            </div>
+            <input type="range" name="price" min="0" max="4000" step="10" value="3000">
+            <button type="submit">Показать</button>
+         </fieldset>
+
+      </form>
+
+      <div>
+         <p>Найдено: 3</p>
+         <p>Сортировка:</p>
+         <ul>
+            <li><a href="">По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По рейтингу</a></li>
+         </ul>
+         <button><img src="https://via.placeholder.com/11x10" alt="Вверх"></button>
+         <button><img src="https://via.placeholder.com/11x10" alt="Вниз"></button>
+      </div>
+      <div>
+         <article>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="жилье">
+            <div>
+               <h2>Amara Resort & Spa</h2>
+               <p>Гостиница</p>
+               <p>От 4000 Р.</p>
+               <button>Подробнее</button>
+               <button>Забронировать</button>
+            </div>
+            <div>
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <p>Рейтинг: 8,5</p>
+            </div>
+         </article>
+         <article>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="жилье">
+            <div>
+               <h2>Desert Quail Inn</h2>
+               <p>Мотель</p>
+               <p>От 3000 Р.</p>
+               <button>Подробнее</button>
+               <button>Забронировать</button>
+            </div>
+            <div>
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <p>Рейтинг: 8,9</p>
+            </div>
+         </article>
+         <article>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="жилье">
+            <div>
+               <h2>Villas at Poco Diablo</h2>
+               <p>Апартаменты</p>
+               <p>От 2000 Р.</p>
+               <button>Подробнее</button>
+               <button>Забронировать</button>
+            </div>
+            <div>
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <img src="https://via.placeholder.com/19x17" alt="звезда">
+               <p>Рейтинг: 9,2</p>
+            </div>
+         </article>
+      </div>
+
+
+   </main>
+   <footer>
+      <div>
+         <p>#VISITSEDONA</p>
+         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
+      <div>
+         <ul>
+            <li>
+               <div>
+                  <a href=""><img src="https://via.placeholder.com/17x17" width="17" height="17" alt="twitter"></a>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href=""><img src="https://via.placeholder.com/12x22" width="12" height="22" alt="facebook"></a>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href=""><img src="https://via.placeholder.com/20x16" width="20" height="16" alt="youtube"></a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <p>WEBSITE BY</p>
+         <img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип HTML-академии">
+      </div>
+   </footer>
+</body>
+
+</html>
