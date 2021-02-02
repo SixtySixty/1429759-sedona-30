@@ -7,20 +7,24 @@
   <link rel="icon" href="/img/16.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
 </head>
 
 <body>
   <header class="header">
-    <i><a href="index.html" class="main-header-logo"><img src="./img/logo.png" width="138" height="74"
-      alt="Логотип"></a></i>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="">информация</a></li>
-        <li><a href="index.html">фото и видео</a></li>
-        <li><a href="index.html">карта штата</a></li>
-        <li><a href="catalog.html ">гостиницы</a></li>
-      </ul>
-    </nav>
+      <i><a href="index.html" class="main-header-logo"><img src="./img/logo.png" width="138" height="74"
+            alt="Логотип"></a></i>
+    <div class="main-navigation-wrapper">
+      <nav class="container">
+        <ul class="site-navigation">
+          <li><a href="">информация</a></li>
+          <li><a href="">фото и видео</a></li>
+          <li><a href="">карта штата</a></li>
+          <li><a href="catalog.html ">гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
@@ -33,7 +37,7 @@
     </section>
     <figure class="section-site">
       <figcaption>
-        <article>
+        <article class="article-section blue-background">
           <h2>Настоящий городок</h2>
           <p>-№1-</p>
           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
@@ -42,44 +46,44 @@
       <img src="./img/view.jpg" width="800" height="256" alt="Прекрасный вид на здание">
     </figure>
     <div class="section-features">
-      <div>
+      <div class="item-features">
         <img src="./img/icon-1.png" width="75" height="72" alt="Домик">
-        <p>Жилье</p>
-        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <p class="head-of-features">Жилье</p>
+        <p class="text-of-features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
-      <div>
+      <div class="item-features">
         <img src="./img/icon-2.png" width="75" height="70" alt="Бургер">
-        <p>Еда</p>
-        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <p class="head-of-features">Еда</p>
+        <p class="text-of-features">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
-      <div>
+      <div class="item-features">
         <img src="./img/icon-3.png" width="64" height="77" alt="Сувениры">
-        <p>Сувениры</p>
-        <p>Не только китайского, но и местного производства!</p>
+        <p class="head-of-features">Сувениры</p>
+        <p class="text-of-features">Не только китайского, но и местного производства!</p>
       </div>
     </div>
     <figure class="section-site">
       <figcaption>
         <img src="./img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
       </figcaption>
-      <article>
+      <article class="article-section blue-background">
         <h2>Там есть мост дьявола</h2>
         <p>-№2-</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </article>
     </figure>
-    <section class="section-sites">
-      <article>
+    <section class="section-sites gray-background">
+      <article class="article-section">
         <h2>Небольшая площадь</h2>
         <p>-№3-</p>
         <p>Все достопремичательности находятся близко</p>
       </article>
-      <article>
+      <article class="article-section">
         <h2>Краcивая дорога</h2>
         <p>-№4-</p>
         <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
       </article>
-      <article>
+      <article class="article-section">
         <h2>Мало туристов</h2>
         <p>-№5-</p>
         <p>Большинство едет в Гранд Каньон и толпиться там</p>
@@ -87,8 +91,9 @@
     </section>
     <section class="section-search">
       <h2>Заинтересовались?</h2>
-      <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button>Поиск гостиницы в седоне</button>
+      <p class="text-of-search">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
+      <button class="button-form">Поиск гостиницы в седоне</button>
     </section>
     <div>
       <!-- map -->
@@ -101,14 +106,14 @@
       <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </div>
     <div>
-      <ul>
-        <li>
+      <ul class="footer-list">
+        <li class="footer-item">
           <a href="/"><img src="./img/twitter.svg" width="17" height="17" alt="twitter"></a>
         </li>
-        <li>
+        <li class="footer-item">
           <a href="/"><img src="./img/fb-icon.svg" width="12" height="22" alt="facebook"></a>
         </li>
-        <li>
+        <li class="footer-item">
           <a href="/"><img src="./img/youtube.svg" width="20" height="16" alt="youtube"></a>
         </li>
       </ul>

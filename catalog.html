@@ -11,34 +11,37 @@
 </head>
 
 <body>
-   <header>
-      <i><a href="index.html"><img src="./img/logo.png" width="138" height="74" alt="Логотип"></a></i>
-      <nav>
-         <ul>
-            <li><a href="inform.html">информация</a></li>
-            <li><a href="index.html">фото и видео</a></li>
-            <li><a href="index.html">карта штата</a></li>
-            <li><a href="catalog.html">гостиницы</a></li>
-         </ul>
-      </nav>
+   <header class="header">
+      <i><a href="index.html" class="main-header-logo"><img src="./img/logo.png" width="138" height="74"
+               alt="Логотип"></a></i>
+      <div class="main-navigation-wrapper">
+         <nav class="container">
+            <ul class="site-navigation">
+               <li><a href="">информация</a></li>
+               <li><a href="">фото и видео</a></li>
+               <li><a href="">карта штата</a></li>
+               <li><a href="catalog.html ">гостиницы</a></li>
+            </ul>
+         </nav>
+      </div>
    </header>
-   <main>
-      <form action="https://echo.htmlacademy.ru/">
-         <fieldset>
+   <main class="container">
+      <form action="https://echo.htmlacademy.ru/" class="control-form">
+         <fieldset class="control-fields">
             <legend>Инфраструктура:</legend>
             <label><input type="checkbox" name="pool">Бассейн</label>
             <label><input type="checkbox" name="parking">Парковка</label>
             <label><input type="checkbox" name="wifi">WI-FI</label>
          </fieldset>
 
-         <fieldset>
+         <fieldset class="control-fields">
             <legend>Тип жилья:</legend>
             <label><input type="checkbox" name="hotel">Гостиница</label>
             <label><input type="checkbox" name="motel">Мотель</label>
             <label><input type="checkbox" name="apartment">Апартаменты</label>
          </fieldset>
 
-         <fieldset>
+         <fieldset class="control-fields">
             <legend>Стоимость в сутки (Р):</legend>
             <div>
                <output>от 0</output>
@@ -114,35 +117,29 @@
 
 
    </main>
-   <footer>
+   <footer class="footer">
       <div>
-         <p>#VISITSEDONA</p>
-         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+        <p>#VISITSEDONA</p>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
       <div>
-         <ul>
-            <li>
-               <div>
-                  <a href=""><img src="./img/twitter.svg" width="17" height="17" alt="twitter"></a>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href=""><img src="./img/fb-icon.svg" width="12" height="22" alt="facebook"></a>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href=""><img src="./img/youtube.svg" width="20" height="16" alt="youtube"></a>
-               </div>
-            </li>
-         </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="/"><img src="./img/twitter.svg" width="17" height="17" alt="twitter"></a>
+          </li>
+          <li class="footer-item">
+            <a href="/"><img src="./img/fb-icon.svg" width="12" height="22" alt="facebook"></a>
+          </li>
+          <li class="footer-item">
+            <a href="/"><img src="./img/youtube.svg" width="20" height="16" alt="youtube"></a>
+          </li>
+        </ul>
       </div>
       <div>
-         <p>WEBSITE BY</p>
-         <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-академии">
+        <p>WEBSITE BY</p>
+        <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="лооготип HTML-академии">
       </div>
-   </footer>
+    </footer>
 </body>
 
 </html>
