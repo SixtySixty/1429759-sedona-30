@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="icon" href="/img/16.svg" type="image/svg+xml">
+  <link rel="icon" href="./16.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet"
@@ -13,15 +13,14 @@
 
 <body>
   <header class="header">
-      <i><a href="index.html" class="main-header-logo"><img src="./img/logo.png" width="138" height="74"
-            alt="Логотип"></a></i>
+    <i class="main-header-logo"><img src="./img/logo.png" width="138" height="74" alt="Логотип"></></i>
     <div class="main-navigation-wrapper">
       <nav class="container">
-        <ul class="site-navigation">
-          <li><a href="">информация</a></li>
-          <li><a href="">фото и видео</a></li>
-          <li><a href="">карта штата</a></li>
-          <li><a href="catalog.html ">гостиницы</a></li>
+        <ul class="header-list">
+          <li class="header-item"><a href="">информация</a></li>
+          <li class="header-item"><a href="">фото и видео</a></li>
+          <li class="header-item"><a href="">карта штата</a></li>
+          <li class="header-item"><a href="catalog.html ">гостиницы</a></li>
         </ul>
       </nav>
     </div>
@@ -29,81 +28,81 @@
 
   <main class="container">
     <div class="section-banner">
-      <img src="./img/welcome.png" width="456" height="350" alt="Приветствие">
+      <img src="./img/welcome.png" width="456" height="350" class="img-banner" alt="Приветствие">
     </div>
     <section class="section-info">
-      <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
+      <h1 class="heading-info">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+      <p class="text-info">Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
     </section>
-    <figure class="section-site">
-      <figcaption>
-        <article class="article-section blue-background">
-          <h2>Настоящий городок</h2>
-          <p>-№1-</p>
-          <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+    <figure class="section-sites">
+      <figcaption class="figcaption-sites">
+        <article class="article-sites blue-background">
+          <h2 class="heading-sites">Настоящий городок</h2>
+          <p class="text-sites">-№1-</p>
+          <p class="text-sites">Седона - не атракцион для туристов, там течет своя жизнь</p>
         </article>
       </figcaption>
-      <img src="./img/view.jpg" width="800" height="256" alt="Прекрасный вид на здание">
+      <img src="./img/view.jpg" width="800" height="256" class="img-view-sites" alt="Вид на здание">
     </figure>
     <div class="section-features">
       <div class="item-features">
-        <img src="./img/icon-1.png" width="75" height="72" alt="Домик">
-        <p class="head-of-features">Жилье</p>
-        <p class="text-of-features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <img src="./img/icon-1.png" width="75" height="72" class="img-features" alt="Домик">
+        <p class="head-features">Жилье</p>
+        <p class="text-features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="item-features">
-        <img src="./img/icon-2.png" width="75" height="70" alt="Бургер">
-        <p class="head-of-features">Еда</p>
-        <p class="text-of-features">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <img src="./img/icon-2.png" width="75" height="70" class="img-features" alt="Бургер">
+        <p class="head-features">Еда</p>
+        <p class="text-features">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
       <div class="item-features">
-        <img src="./img/icon-3.png" width="64" height="77" alt="Сувениры">
-        <p class="head-of-features">Сувениры</p>
-        <p class="text-of-features">Не только китайского, но и местного производства!</p>
+        <img src="./img/icon-3.png" width="64" height="77" class="img-features" alt="Сувениры">
+        <p class="head-features">Сувениры</p>
+        <p class="text-features">Не только китайского, но и местного производства!</p>
       </div>
     </div>
     <figure class="section-site">
-      <figcaption>
-        <img src="./img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+      <figcaption class="figcaption-sites">
+        <article class="article-sites blue-background">
+          <h2 class="heading-sites">Там есть мост дьявола</h2>
+          <p class="text-sites">-№2-</p>
+          <p class="text-sites">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </article>
       </figcaption>
-      <article class="article-section blue-background">
-        <h2>Там есть мост дьявола</h2>
-        <p>-№2-</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </article>
+      <img src="./img/bridge.jpg" width="800" height="256" class="img-bridge-sites" alt="Мост дьявола">
     </figure>
     <section class="section-sites gray-background">
-      <article class="article-section">
-        <h2>Небольшая площадь</h2>
-        <p>-№3-</p>
-        <p>Все достопремичательности находятся близко</p>
+      <article class="article-sites">
+        <h2 class="heading-sites">Небольшая площадь</h2>
+        <p class="text-sites">-№3-</p>
+        <p class="text-sites">Все достопремичательности находятся близко</p>
       </article>
-      <article class="article-section">
-        <h2>Краcивая дорога</h2>
-        <p>-№4-</p>
-        <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
+      <article class="article-sites">
+        <h2 class="heading-sites">Краcивая дорога</h2>
+        <p class="text-sites">-№4-</p>
+        <p class="text-sites">Ехать в Седону из лас-вегаса совсем не скучно!</p>
       </article>
-      <article class="article-section">
-        <h2>Мало туристов</h2>
-        <p>-№5-</p>
-        <p>Большинство едет в Гранд Каньон и толпиться там</p>
+      <article class="article-sites">
+        <h2 class="heading-sites">Мало туристов</h2>
+        <p class="text-sites">-№5-</p>
+        <p class="text-sites">Большинство едет в Гранд Каньон и толпиться там</p>
       </article>
     </section>
     <section class="section-search">
-      <h2>Заинтересовались?</h2>
-      <p class="text-of-search">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <h2 class="heading-search">Заинтересовались?</h2>
+      <p class="text-search">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
-      <button class="button-form">Поиск гостиницы в седоне</button>
+      <button class="button-form-search">Поиск гостиницы в седоне</button>
     </section>
-    <div>
+    <div class="map">
       <!-- map -->
     </div>
   </main>
 
   <footer class="footer">
-    <div>
-      <p>#VISITSEDONA</p>
-      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+    <div class="contact">
+      <p class="contact-title">#VISITSEDONA</p>
+      <a href="tel:+74956660166" class="contact-phone">ТЕЛ: +7(495) 666-01-66</a>
     </div>
     <div>
       <ul class="footer-list">
@@ -118,9 +117,9 @@
         </li>
       </ul>
     </div>
-    <div>
-      <p>WEBSITE BY</p>
-      <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="лооготип HTML-академии">
+    <div class="creaters">
+      <p class="creaters-title">WEBSITE BY</p>
+      <img src="./img/logo-htmlacademy.svg" width="115" height="41" alt="лооготип HTML-академии" class="creator-logo">
     </div>
   </footer>
 </body>
