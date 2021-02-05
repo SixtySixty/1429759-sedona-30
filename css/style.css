@@ -8,11 +8,14 @@
   --basic-white: #ffffff;
   --basic-gray: #eeeeee;
   --basic-dark: #333333;
+  --basic-lighter-dark: #666666;
+  --basic-lightest-dark: #f2f2f2;
   --basic-light-brown: #847870;
   --basic-brown: #766357;
   --basic-darker-brown: #604e43;
   --basic-darkest-brown: #503e33;
   --basic-blue: #81b3d2;
+  --basic-darker-blue: #669EC0;
 }
 
 /*For all*/
@@ -21,10 +24,10 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
@@ -47,6 +50,40 @@ li {
   width: 1200px;
 }
 
+.button-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+.blue-background {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.brown-background {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+}
+
 /*index classes*/
 
 /*heading-navigation*/
@@ -56,6 +93,7 @@ li {
 }
 
 .header-item a {
+  font-weight: 700;
   color: var(--basic-black);
 }
 
@@ -64,7 +102,18 @@ li {
 }
 
 .header-item a:focus {
-  color: var(--basic-dark);
+  color: var(--basic-brown);
+}
+
+.header-item a:active {
+  opacity: 30%;
+}
+
+.header-item-active {
+  font-weight: 700;
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
 }
 
 /*section-banner*/
@@ -73,7 +122,7 @@ li {
   text-align: center;
   width: 1200px;
   height: 509px;
-  background: #D9EAF2 url("../img/background-photo.jpg");
+  background: #d9eaf2 url("../img/background-photo.jpg");
 }
 
 /*section-info*/
@@ -90,7 +139,6 @@ li {
 .text-info {
   font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
   color: var(--basic-dark);
 }
 
@@ -106,22 +154,16 @@ li {
 }
 
 .text-sites {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 
 .img-view-sites {
-  background-color: #9DAA96;
+  background-color: #9daa96;
 }
 
 .imf-bridge-sites {
-  background-color: #E6B29C;
-}
-
-.blue-background {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
+  background-color: #e6b29c;
 }
 
 .gray-color {
@@ -135,12 +177,12 @@ li {
 }
 
 .head-features {
+  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
 }
 
 .text-features {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark);
@@ -158,7 +200,6 @@ li {
 }
 
 .text-search {
-  font-weight: 400;
   color: var(--basic-dark);
 }
 
@@ -175,9 +216,12 @@ li {
   background-color: var(--basic-darker-brown);
 }
 
-.button-form-search:focus {
-  background-color: var(--basic-darkest-brown);
-  color: var(--basic-light-brown);
+.button-form-search:active {
+  background-color: var(--basic-darker-brown);
+}
+
+.button-text-opacity-search:active {
+  opacity: 30%;
 }
 
 /*footer*/
@@ -186,12 +230,39 @@ li {
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item:hover {
+  background-color: var(--basic-darker-blue);
+}
+
+.footer-item:active {
+  background-color: #5496BD;
+}
+
+.footer-item:active .footer-item-icon path {
+  opacity: 30%;
+}
+
+.footer-academy-logo-creators {
+  color: #231f20;
+}
+
+.footer-academy-logo-creators:hover {
+  color: #81b3d2;
+}
+
+.footer-academy-logo-creators:active {
+  color: #bdbbbc;
 }
 
 /*contact*/
 
 .contact {
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
@@ -202,17 +273,13 @@ li {
 
 /*creaters*/
 
-.creaters-title {
-  font-weight: 400;
-}
-
 /*catalog classes*/
 
 /*control-form*/
 
 .control-form {
   background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
+  background-color: #6789ae;
   color: var(--basic-white);
 }
 
@@ -228,7 +295,6 @@ li {
 }
 
 .label-control {
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
@@ -241,7 +307,7 @@ li {
 .button-control {
   font-size: 14px;
   line-height: 21px;
-  border: none;
+  border: 1px solid var(--basic-white);
   border-color: var(--basic-white);
   text-transform: uppercase;
 }
@@ -254,13 +320,11 @@ li {
 }
 
 .heading-filter {
-  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 }
 
 .filter-item a {
-  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-light-brown);
@@ -269,7 +333,6 @@ li {
 
 .filter-item a:hover {
   color: var(--basic-blue);
-
 }
 
 .filter-item a:focus {
@@ -282,3 +345,38 @@ li {
   border-bottom: 0px;
 }
 
+/*sortedBlock*/
+
+.img-Layer1-sortedBlock {
+  background-color: #f6b4da;
+}
+
+.img-Layer2-sortedBlock {
+  background-color: #9cb9e3;
+}
+
+.img-Layer3-sortedBlock {
+  background-color: #9eb46e;
+}
+
+.button-sortedBlock {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  border: 0;
+}
+
+.title-sortedBlock {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rating-sortedBlock {
+  width: 110px;
+  height: 27px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-dark);
+  background-color: var(--basic-lightest-dark);
+}
