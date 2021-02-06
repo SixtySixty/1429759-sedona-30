@@ -7,15 +7,25 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-gray: #eeeeee;
+  --basic-lighter-gray: #d9eaf2;
   --basic-dark: #333333;
+  --basic-darker-dark: #231f20;
   --basic-lighter-dark: #666666;
   --basic-lightest-dark: #f2f2f2;
   --basic-light-brown: #847870;
   --basic-brown: #766357;
   --basic-darker-brown: #604e43;
   --basic-darkest-brown: #503e33;
+  --basic-lighter-blue: #6789ae;
+  --basic-lightest-blue: #9cb9e3;
   --basic-blue: #81b3d2;
-  --basic-darker-blue: #669EC0;
+  --basic-darker-blue: #669ec0;
+  --basic-darkest-blue: #5496BD;
+  --basic-lighter-green: #9daa96;
+  --basic-green: #9eb46e;
+  --basic-light-orange:  #e6b29c;
+  --basic-light-violet: #bdbbbc;
+  --basic-pink:  #f6b4da;
 }
 
 /*For all*/
@@ -56,7 +66,6 @@ li {
   padding: 0;
   width: auto;
   overflow: visible;
-
   background: transparent;
 
   /* inherit font & color from ancestor */
@@ -72,6 +81,7 @@ li {
 
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
+  outline: none;
 }
 
 .blue-background {
@@ -109,11 +119,12 @@ li {
   opacity: 30%;
 }
 
-.header-item-active {
+.header-item-active a{
+  color: var(--basic-brown);
   font-weight: 700;
-  opacity: 30%;
   pointer-events: none;
   cursor: default;
+  user-select: none;
 }
 
 /*section-banner*/
@@ -122,7 +133,7 @@ li {
   text-align: center;
   width: 1200px;
   height: 509px;
-  background: #d9eaf2 url("../img/background-photo.jpg");
+  background: var(--basic-lighter-gray) url("../img/background-photo.jpg");
 }
 
 /*section-info*/
@@ -159,11 +170,11 @@ li {
 }
 
 .img-view-sites {
-  background-color: #9daa96;
+  background-color: var(--basic-light-green);
 }
 
 .imf-bridge-sites {
-  background-color: #e6b29c;
+  background-color: var(--basic-light-orange);
 }
 
 .gray-color {
@@ -240,7 +251,7 @@ li {
 }
 
 .footer-item:active {
-  background-color: #5496BD;
+  background-color: var(--basic-darkest-blue);
 }
 
 .footer-item:active .footer-item-icon path {
@@ -248,15 +259,15 @@ li {
 }
 
 .footer-academy-logo-creators {
-  color: #231f20;
+  color: var(--basic-darker-dark);
 }
 
 .footer-academy-logo-creators:hover {
-  color: #81b3d2;
+  color: var(--basic-blue);
 }
 
 .footer-academy-logo-creators:active {
-  color: #bdbbbc;
+  color: var(--basic-light-violet) ;
 }
 
 /*contact*/
@@ -279,7 +290,7 @@ li {
 
 .control-form {
   background-image: url(../img/background.jpg);
-  background-color: #6789ae;
+  background-color: var(--basic-lighter-blue);
   color: var(--basic-white);
 }
 
@@ -324,6 +335,18 @@ li {
   line-height: 18px;
 }
 
+.button-filter:hover path{
+  fill: var(--basic-black);
+}
+
+.button-filter:active path{
+  fill: var(--basic-blue);
+}
+
+.button-filter-active path{
+  fill: var(--basic-blue);
+}
+
 .filter-item a {
   font-size: 12px;
   line-height: 18px;
@@ -331,16 +354,21 @@ li {
   border-bottom: 1px var(--basic-blue) dotted;
 }
 
+.filter-item-active a {
+  color: var(--basic-blue);
+  border: none;
+}
+
 .filter-item a:hover {
   color: var(--basic-blue);
 }
 
-.filter-item a:focus {
+.filter-item a:active {
   color: var(--basic-black);
   border-bottom: 0px;
 }
 
-.filter-item a:active {
+.filter-item a:focus {
   color: var(--basic-blue);
   border-bottom: 0px;
 }
@@ -348,15 +376,15 @@ li {
 /*sortedBlock*/
 
 .img-Layer1-sortedBlock {
-  background-color: #f6b4da;
+  background-color:var(--basic-pink);
 }
 
 .img-Layer2-sortedBlock {
-  background-color: #9cb9e3;
+  background-color: var(--basic-lightest-blue);
 }
 
 .img-Layer3-sortedBlock {
-  background-color: #9eb46e;
+  background-color:var(--basic-green);
 }
 
 .button-sortedBlock {
@@ -364,6 +392,45 @@ li {
   font-size: 14px;
   line-height: 21px;
   border: 0;
+}
+
+.btn-blue-sortedBlock:hover {
+  background-color: var(--basic-darker-blue);
+}
+
+.btn-blue-sortedBlock:active {
+  background-color: var(--basic-darkest-blue);
+}
+
+.btn-blue-sortedBlock:active span {
+  opacity: 30%;
+}
+
+.btn-brown-sortedBlock:hover {
+  background-color: var(--basic-darker-brown);
+}
+
+.btn-brown-sortedBlock:active {
+  background-color: var(--basic-darkest-brown);
+}
+
+.btn-brown-sortedBlock:active span {
+  opacity: 30%;
+}
+
+.heading-sortedBlock a {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.heading-sortedBlock a:hover {
+  color: var(--basic-blue);
+}
+
+.heading-sortedBlock a:active {
+  opacity: 30%;
 }
 
 .title-sortedBlock {
