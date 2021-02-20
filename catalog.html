@@ -12,7 +12,7 @@
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header class="header container">
          <span><a href="index.html" class="main-header-logo"><img src="./img/logo.png" width="138" height="74"
                   alt="Логотип"></a></span>
          <div class="main-navigation-wrapper">
@@ -30,22 +30,49 @@
          <form action="https://echo.htmlacademy.ru/" class="control-form">
             <fieldset class="fields-control">
                <legend class="heading-control">Инфраструктура:</legend>
-               <label class="label-control"><input type="checkbox" name="pool">Бассейн</label>
-               <label class="label-control"><input type="checkbox" name="parking">Парковка</label>
-               <label class="label-control"><input type="checkbox" name="wifi">WI-FI</label>
+               <ul>
+                  <li>
+                     <label class="label-control">
+                        <input type="checkbox" name="pool">Бассейн
+                     </label>
+                  </li>
+                  <li>
+                     <label class="label-control">
+                        <input type="checkbox" name="parking">Парковка
+                     </label>
+                  </li>
+                  <li>
+                     <label class="label-control">
+                        <input type="checkbox" name="wifi">WI-FI
+                     </label>
+                  </li>
+               </ul>
             </fieldset>
 
             <fieldset class="fields-control">
                <legend class="heading-control">Тип жилья:</legend>
-               <label class="label-control"><input type="checkbox" name="hotel">Гостиница</label>
-               <label class="label-control"><input type="checkbox" name="motel">Мотель</label>
-               <label class="label-control"><input type="checkbox" name="apartment">Апартаменты</label>
+               <ul>
+                  <li>
+                     <label class="label-control">
+                        <input type="checkbox" name="hotel">Гостиница
+                     </label>
+                  </li>
+                  <li>
+                     <label class="label-control"><input type="checkbox" name="motel">Мотель</label>
+                  </li>
+                  <li>
+                     <label class="label-control">
+                        <input type="checkbox" name="apartment">Апартаменты
+                     </label>
+                  </li>
+               </ul>
             </fieldset>
+
 
             <fieldset class="fields-control">
                <legend class="heading-control">Стоимость в сутки (Р):</legend>
                <div class=" outputs-control">
-                  <output class="label-control">от 0</output>
+                  <output class="label-control ">от 0</output>
                   <output class="label-control ">до 3000</output>
                </div>
                <input type="range" class="input-range-control" name="price" min="0" max="4000" step="10" value="3000">
@@ -61,19 +88,21 @@
                <li class="filter-item"><a href="">По типу</a></li>
                <li class="filter-item"><a href="">По рейтингу</a></li>
             </ul>
-            <button class="button-filter button-reset"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
-               </svg>
-            </button>
-            <button class="button-filter button-reset button-filter-active"><svg width="11" height="10"
-                  viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA" />
-               </svg></button>
+            <div class="buttons-sorted">
+               <button class="button-filter button-reset"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                  </svg>
+               </button>
+               <button class="button-filter button-reset button-filter-active"><svg width="11" height="10"
+                     viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA" />
+                  </svg></button>
+            </div>
          </div>
          <div class="sortedBlock">
             <article class="article-sortedBlock">
-               <img src="./img/Layer1.jpg" width="135" height="90" class="img-Layer1-sortedBlock" alt="жилье">
+                  <img src="./img/Layer1.jpg" width="135" height="90" class="img-Layer1-sortedBlock" alt="жилье">
                <div class="description-sortedBlock">
                   <p class="heading-sortedBlock"><a href="">Amara Resort & Spa</a></p>
                   <p class="title-sortedBlock">Гостиница</p>
@@ -132,7 +161,7 @@
 
 
       </main>
-      <footer class="footer">
+      <footer class="footer container">
          <div class="contact">
             <p class="contact-title">#VISITSEDONA</p>
             <a href="tel:+74956660166" class="contact-phone">ТЕЛ: +7(495) 666-01-66</a>

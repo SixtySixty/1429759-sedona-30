@@ -348,9 +348,6 @@ li {
   display: flex;
 }
 
-.creators-title {
- 
-}
 
 /*catalog classes*/
 
@@ -360,7 +357,11 @@ li {
   background-image: url(../img/background.jpg);
   background-color: var(--basic-lighter-blue);
   color: var(--basic-white);
+  height: 217px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
 }
+
 
 .fields-control {
   font-size: 14px;
@@ -396,6 +397,9 @@ li {
 
 .filter {
   background-color: var(--basic-white);
+  height: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .answer-filter {
@@ -407,6 +411,11 @@ li {
 .heading-filter {
   font-size: 12px;
   line-height: 18px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .button-filter:hover path {
@@ -448,6 +457,15 @@ li {
 }
 
 /*sortedBlock*/
+
+.sortedBlock {
+  height: 454px;
+}
+
+.article-sortedBlock {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
 
 .sortedBlock {
   background-color: var(--basic-white);
