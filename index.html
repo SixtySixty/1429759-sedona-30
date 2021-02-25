@@ -7,37 +7,35 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="container">
   <div class="wrapper">
     <header class="header">
       <nav class="container-header">
-        <a class="main-header-logo">
-          <img src="./img/logo.png" width="138" height="74" alt="Логотип">
-        </a>
-        <div class="main-navigation-bar">
-          <div class="main-navigation-wrapper">
-            <ul class="header-list">
-              <li class="header-item"><a href="">информация</a></li>
-              <li class="header-item"><a href="">фото и видео</a></li>
-              <li class="header-item"><a href="">карта штата</a></li>
-              <li class="header-item"><a href="catalog.html ">гостиницы</a></li>
-            </ul>
-          </div>
+        <div class="main-navigation-wrapper">
+          <ul class="header-list">
+            <li class="header-item"><a href="">информация</a></li>
+            <li class="header-item"><a href="">фото и видео</a></li>
+            <li class="header-item"><a class="main-header-logo">
+                <img src="./img/logo.png" width="138" height="74" alt="Логотип">
+              </a></li>
+            <li class="header-item"><a href="">карта штата</a></li>
+            <li class="header-item"><a href="catalog.html ">гостиницы</a></li>
+          </ul>
         </div>
       </nav>
+    </header>
   </div>
-  </header>
 
   <main>
     <div class="section-banner">
       <img src="./img/welcome.png" width="456" height="350" class="img-banner" alt="Приветствие">
     </div>
     <section class="section-info">
-      <h1 class="heading-info">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+      <h1 class="heading-info">Седона &ndash; небольшой городок в аризоне, заслуживающий большего!</h1>
       <p class="text-info">Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
     </section>
     <figure class="section-sites-house">
@@ -45,7 +43,7 @@
         <article class="article-sites blue-background">
           <h2 class="heading-sites">Настоящий городок</h2>
           <p class="text-sites">-№1-</p>
-          <p class="text-sites">Седона - не атракцион для туристов, там течет своя жизнь</p>
+          <p class="text-sites">Седона &ndash; не атракцион для туристов, там течет своя жизнь</p>
         </article>
       </figcaption>
       <img src="./img/view.jpg" width="800" height="256" class="img-view-sites" alt="Вид на здание">
@@ -112,9 +110,9 @@
       <p class="contact-title">#VISITSEDONA</p>
       <a href="tel:+74956660166" class="contact-phone">ТЕЛ: +7(495) 666-01-66</a>
     </div>
-    <div>
+    <div class="footer-list-container">
       <ul class="footer-list">
-        <li>
+        <li class="footer-item-container">
           <a href="/" class="footer-item"><svg class="footer-item-icon" width="17" height="17" viewBox="0 0 17 17"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -123,13 +121,13 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="footer-item-container">
           <a href="/" class="footer-item"><svg class="footer-item-icon" width="12" height="22" viewBox="0 0 12 22"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
             </svg></a>
         </li>
-        <li>
+        <li class="footer-item-container">
           <a href="/" class="footer-item"><svg class="footer-item-icon" width="20" height="16" viewBox="0 0 20 16"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
