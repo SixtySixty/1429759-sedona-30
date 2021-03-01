@@ -40,7 +40,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  
+
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -107,6 +107,14 @@ li {
 .brown-background {
   background-color: var(--basic-brown);
   color: var(--basic-white);
+}
+
+.gray-color {
+  background-color: var(--basic-gray);
+}
+
+.white-color {
+  background-color: var(--basic-white);
 }
 
 .page {
@@ -191,6 +199,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--basic-white);
 }
 
 .heading-info {
@@ -244,11 +253,6 @@ li {
 .imf-bridge-sites {
   background-color: var(--basic-light-orange);
 }
-
-.gray-color {
-  background-color: var(--basic-gray);
-}
-
 /*features*/
 
 .section-features {
@@ -258,12 +262,17 @@ li {
   column-gap: 20px;
 }
 
+.main-advantages-features {
+  height: 330px;
+  background-color: var(--basic-white);
+}
+
 .item-features {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .head-features {
@@ -284,6 +293,11 @@ li {
 
 .section-search {
   text-align: center;
+  background-color: var(--basic-white);
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heading-search {
@@ -299,9 +313,12 @@ li {
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
   color: var(--basic-white);
   border: none;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .button-form-search:hover {
@@ -321,7 +338,6 @@ li {
 .footer {
   height: 120px;
   background-color: var(--basic-white);
-  margin-top: 65px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -418,7 +434,6 @@ li {
   width: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
 }
 
 .fields-control {
