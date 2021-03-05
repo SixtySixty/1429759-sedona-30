@@ -194,11 +194,12 @@ li {
   height: 56px;
   grid-template-columns: 1fr min-content;
   background-color: var(--basic-white);
+  padding: 0 72px;
 }
 
 .header-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container-header {
@@ -240,10 +241,12 @@ li {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+  z-index: 1;
 }
 /*section-banner*/
 
 .section-banner {
+  position: relative;
   text-align: center;
   display: flex;
   width: 1200px;
@@ -255,29 +258,56 @@ li {
   margin: auto;
 }
 
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid var(--basic-white);
+  border-right: 550px solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.triangle-left--second {
+  left: 20px;
+  left: 250px;
+  border-right-width: 347px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid var(--basic-white);
+  border-left: 550px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.triangle-right--second {
+  right: 20px;
+  right: 250px;
+  border-left-width: 347px;
+}
+
 /*section-info*/
 
 .section-info {
-  height: 216px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--basic-white);
+  padding: 43px 340px 50px;
 }
 
 .heading-info {
   font-size: 21px;
   line-height: 26px;
-  width: 470px;
-  margin: 0;
   text-align: center;
+  font-weight: 700;
 }
 
 .text-info {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-dark);
+  margin-top: 43px;
 }
 
 /*arcticles-sites*/
@@ -285,29 +315,35 @@ li {
 .section-sites-house {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin: 0px;
 }
 
 .section-sites-bridge {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin: 0px;
 }
 
 .article-sites {
   text-align: center;
-  height: 256px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 48px 48px 55px;
 }
 
 .heading-sites {
   font-size: 21px;
   line-height: 21px;
+  width: 150px;
+  margin: 0 auto 25px;
+  font-weight: 700;
 }
 
 .text-sites {
   font-size: 14px;
   line-height: 21px;
+}
+
+.text-sites + .text-sites {
+  margin-top: 23px;
 }
 
 .img-view-sites {
@@ -320,30 +356,24 @@ li {
 /*features*/
 
 .section-features {
-  height: 256px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
 }
 
 .main-advantages-features {
-  height: 330px;
   background-color: var(--basic-white);
 }
 
 .item-features {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 60px 40px 73px;
 }
 
 .head-features {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  margin: 0 10px;
+  margin: 19px 0 30px;
 }
 
 .text-features {
@@ -358,31 +388,30 @@ li {
 .section-search {
   text-align: center;
   background-color: var(--basic-white);
-  height: 256px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 54px 318px 0;
 }
 
 .heading-search {
   font-size: 30px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .text-search {
   color: var(--basic-dark);
+  padding: 30px 0;
 }
 
 .button-form-search {
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
-  width: 568px;
-  height: 86px;
   color: var(--basic-white);
   border: none;
   text-transform: uppercase;
   margin: 0 auto;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .button-form-search:hover {
@@ -391,6 +420,10 @@ li {
 
 .button-form-search:active {
   background-color: var(--basic-darker-brown);
+}
+
+.button-text-opacity-search {
+  padding: 30px 125px;
 }
 
 .button-text-opacity-search:active {
@@ -404,6 +437,7 @@ li {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px;
 }
 
 .contact {
@@ -431,6 +465,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.creators-title {
+  position: relative;
+  right: 8px;
+  top: 11px;
 }
 
 .footer-item-container + .footer-item-container {
@@ -468,6 +508,11 @@ li {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+}
+
+.contact-title {
+  position: relative;
+  bottom: 10px;
 }
 
 .contact-phone {
