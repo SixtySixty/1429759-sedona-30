@@ -20,7 +20,7 @@
                   <li class="header-item"><a href="">информация</a></li>
                   <li class="header-item"><a href="">фото и видео</a></li>
                   <li class="header-item"><a class="main-header-logo" href="index.html">
-                        <img src="./img/logo.png" width="138" height="74" alt="Логотип">
+                        <img src="./img/logo.png" width="138" height="70" alt="Логотип">
                      </a></li>
                   <li class="header-item"><a href="">карта штата</a></li>
                   <li class="header-item"><a href="catalog.html ">гостиницы</a></li>
@@ -61,7 +61,7 @@
                <ul>
                   <li class="fields-control-item">
                      <input type="checkbox" id="hotel" name="hotel">
-                     <label for="motel" class="label-control">
+                     <label for="hotel" class="label-control">
                         Гостиница
                      </label>
                   </li>
@@ -87,20 +87,28 @@
                <output class="label-range-start label-range-solid">от 0</output>
                <output class="label-range-end ">до 3000</output>
             </div>
-            <input type="range" class="input-range-control" name="price" min="0" max="4000" step="10" value="3000">
+
+            <div class="range-controls">
+               <div class="scale">
+                  <div class="bar"></div>
+               </div>
+               <div class="toggle toggle-min" tabindex="0"></div>
+               <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+
             <button class="button-range button-reset" type="submit">Показать</button>
          </fieldset>
+
+
       </form>
 
-      <div class="filter">
-         <div class="grid-filter">
+      <div class="filter sortedBlock-bottom-solid">
+         <div class="flex-filter">
             <p class="answer-filter">Найдено: 3</p>
             <p class="heading-filter">Сортировка:</p>
-            <ul class="filter-list">
-               <li class="filter-item filter-item-active"><a href="">По цене</a></li>
-               <li class="filter-item"><a href="">По типу</a></li>
-               <li class="filter-item"><a href="">По рейтингу</a></li>
-            </ul>
+            <p class="filter-item filter-item-active"><a href="">По цене</a></p>
+            <p class="filter-item"><a href="">По типу</a></p>
+            <p class="filter-item"><a href="">По рейтингу</a></p>
          </div>
          <div class="buttons-sorted">
             <button class="button-filter button-reset"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
@@ -108,14 +116,14 @@
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
                </svg>
             </button>
-            <button class="button-filter button-reset button-filter-active"><svg width="11" height="10"
-                  viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="button-filter button-reset button--margin-left button-filter-active"><svg width="11"
+                  height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA" />
                </svg></button>
          </div>
       </div>
       <div class="sortedBlock">
-         <article class="article-sortedBlock">
+         <article class="article-sortedBlock sortedBlock-bottom-solid">
             <img src="./img/Layer1.jpg" width="135" height="90" class="img-Layer2-sortedBlock" alt="жилье">
             <div class="description-sortedBlock">
                <p class="heading-sortedBlock"><a href="">Amara Resort & Spa</a></p>
@@ -127,16 +135,18 @@
                   class="button-sortedBlock  btn-brown-sortedBlock brown-background button-reset"><span>Забронировать</span></button>
             </div>
             <div class="reviews-sortedBlock">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
+               <div class="stars">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+               </div>
                <p class="rating-sortedBlock">Рейтинг: 8,5</p>
             </div>
          </article>
 
 
-         <article class="article-sortedBlock">
+         <article class="article-sortedBlock sortedBlock-bottom-solid">
             <img src="./img/Layer2.jpg" width="135" height="90" class="img-Layer2-sortedBlock" alt="жилье">
             <div class="description-sortedBlock">
                <p class="heading-sortedBlock"><a href="">Desert Quail Inn</a></p>
@@ -148,14 +158,16 @@
                   class="button-sortedBlock  btn-brown-sortedBlock brown-background button-reset"><span>Забронировать</span></button>
             </div>
             <div class="reviews-sortedBlock">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
+               <div class="stars">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+               </div>
                <p class="rating-sortedBlock">Рейтинг: 8,9</p>
             </div>
          </article>
 
-         <article class="article-sortedBlock">
+         <article class="article-sortedBlock sortedBlock-bottom-solid">
             <img src="./img/Layer3.png" width="135" height="90" class="img-Layer3-sortedBlock" alt="жилье">
             <div class="description-sortedBlock">
                <p class="heading-sortedBlock"><a href="">Villas at Poco Diablo</a></p>
@@ -167,8 +179,10 @@
                   class="button-sortedBlock btn-brown-sortedBlock brown-background button-reset"><span>Забронировать</span></button>
             </div>
             <div class="reviews-sortedBlock">
-               <img src="./img/star.png" alt="звезда">
-               <img src="./img/star.png" alt="звезда">
+               <div class="stars">
+                  <img src="./img/star.png" alt="звезда">
+                  <img src="./img/star.png" alt="звезда">
+               </div>
                <p class="rating-sortedBlock">Рейтинг: 9,2</p>
             </div>
          </article>
