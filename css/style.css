@@ -221,16 +221,6 @@ li {
   align-items: center;
 }
 
-.header-item-relative-right {
-  position: relative;
-  right: 99px;
-}
-
-.header-item-relative-left {
-  position: relative;
-  left: 87px;
-}
-
 .header-item a {
   font-weight: 700;
   color: var(--basic-black);
