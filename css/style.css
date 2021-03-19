@@ -114,6 +114,7 @@ body {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   background-color: var(--basic-lightest-dark);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .wrapper {
@@ -136,7 +137,6 @@ li {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .button-reset {
@@ -191,7 +191,7 @@ li {
 
 .main-navigation-wrapper {
   display: grid;
-  height: 60px;
+  height: 55px;
   grid-template-columns: 1fr min-content;
   background-color: var(--basic-white);
   padding: 0 72px;
@@ -303,13 +303,15 @@ li {
 
 .section-info {
   background-color: var(--basic-white);
-  padding: 43px 340px 50px;
+  padding: 43px 356px 50px;
 }
 
 .heading-info {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  position: relative;
+  right: 4px;
   font-weight: 700;
 }
 
@@ -403,11 +405,16 @@ li {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
+  position: relative;
+  right: 5px;
 }
 
 .text-search {
   color: var(--basic-dark);
-  padding: 30px 0;
+  padding: 29px 0 40px 0;
+  position: relative;
+  left: 1px;
+  top: 3px;
 }
 
 .button-form-search {
@@ -435,7 +442,7 @@ li {
 }
 
 .button-text-opacity-search:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*footer*/
@@ -897,7 +904,6 @@ li {
   text-align: center;
 }
 
-
 .modal-login {
   display: none;
   top: 120px;
@@ -961,28 +967,27 @@ li {
 .query-form__control-date {
   box-sizing: border-box;
   padding: 0 0 0 10px;
-  background: #F2F2F2;
-  border: 2px solid #F2F2F2;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
   flex-grow: 1;
 }
 
 .query-form__control-date:hover {
-  background: #EBEBEB;
-  border: 2px solid #EBEBEB;
+  background: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .query-form__control-date:focus {
   outline: none;
   background: #fff;
-  border: 2px solid #E5E5E5;
- 
+  border: 2px solid #e5e5e5;
 }
 
 .calendar-icon {
   position: absolute;
   right: 10px;
   cursor: pointer;
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 .calendar-icon:hover {
@@ -990,7 +995,7 @@ li {
 }
 
 .calendar-icon:active {
-  color: #81B3D2;;
+  color: #81b3d2;
 }
 
 .query-form__control-wrapper {
@@ -998,8 +1003,8 @@ li {
 }
 
 .button-count {
-  background: #F2F2F2;
-  color: #A9A9A9;
+  background: #f2f2f2;
+  color: #a9a9a9;
   display: flex;
   align-items: center;
   padding: 14px;
@@ -1012,19 +1017,21 @@ li {
 }
 
 .button-count:active {
-  color: #81B3D2;;
+  color: #81b3d2;
 }
 
 .query-form__control--count + .query-form__control--count {
   margin-left: auto;
 }
 
-.query-form__control--count + .query-form__control--count .query-form__control-label {
+.query-form__control--count
+  + .query-form__control--count
+  .query-form__control-label {
   width: 65px;
-} 
+}
 
 .query-form__control-number {
-  background: #F2F2F2;
+  background: #f2f2f2;
   width: 30px;
   text-align: center;
   border: 0;
@@ -1044,16 +1051,16 @@ li {
   line-height: 26px;
   text-transform: uppercase;
   cursor: pointer;
-  background: #81B3D2;
+  background: #81b3d2;
   color: #fff;
 }
 
 .query-form__sumbit:hover {
-  background: #669EC0;
+  background: #669ec0;
 }
 
 .query-form__sumbit:active {
-  background: #5496BD;
+  background: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
