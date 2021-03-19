@@ -191,7 +191,7 @@ li {
 
 .main-navigation-wrapper {
   display: grid;
-  height: 55px;
+  height: 56px;
   grid-template-columns: 1fr min-content;
   background-color: var(--basic-white);
   padding: 0 72px;
@@ -202,16 +202,6 @@ li {
   justify-content: space-between;
 }
 
-.header-list li:nth-child(2) {
-  position: relative;
-  right: 100px;
-}
-
-.header-list li:nth-child(3) {
-  position: relative;
-  left: 85px;
-}
-
 .container-header {
   display: grid;
 }
@@ -219,6 +209,7 @@ li {
 .header-item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-item a {
@@ -610,6 +601,8 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  position: relative;
+  bottom: 4px;
 }
 
 .label-range {
