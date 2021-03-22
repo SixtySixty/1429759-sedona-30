@@ -130,6 +130,10 @@ img {
   height: auto;
 }
 
+main {
+  background-color: var(--basic-white);
+}
+
 li {
   list-style: none;
 }
@@ -146,7 +150,7 @@ li {
   width: auto;
   overflow: visible;
   background: transparent;
-
+  cursor: pointer;
   /* inherit font & color from ancestor */
   color: inherit;
   font: inherit;
@@ -831,6 +835,7 @@ li {
 
 .button-sortedBlock {
   font-weight: 700;
+  cursor: pointer;
   font-size: 14px;
   line-height: 21px;
   border: 0;
