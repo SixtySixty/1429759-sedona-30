@@ -71,7 +71,10 @@ td {
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-gray: #eeeeee;
+  --basic-darker-gray: #e5e5e5;
+  --basic-darkest-gray: #ebebeb;
   --basic-lighter-gray: #d9eaf2;
+  --basic-lightest-gray: #cfcfcf;
   --basic-dark: #333333;
   --basic-darker-dark: #231f20;
   --basic-lighter-dark: #666666;
@@ -91,6 +94,8 @@ td {
   --basic-light-violet: #bdbbbc;
   --basic-pink: #f6b4da;
   --basic-swamp: #888888;
+  --basic-lighter-swamp: #ababab;
+  --basic-lightest-brown: #a9a9a9;
 }
 
 /*For all*/
@@ -213,7 +218,12 @@ li {
 .header-item {
   display: flex;
   align-items: center;
-  position: relative;
+  width: 100%;
+}
+
+li:nth-child(3),
+li:nth-child(4) {
+  justify-content: flex-end;
 }
 
 .header-item a {
@@ -311,8 +321,6 @@ li {
 }
 
 .text-info {
-  font-size: 14px;
-  line-height: 26px;
   color: var(--basic-dark);
   margin-top: 43px;
 }
@@ -343,7 +351,6 @@ li {
 }
 
 .text-sites {
-  font-size: 14px;
   line-height: 21px;
 }
 
@@ -382,7 +389,6 @@ li {
 }
 
 .text-features {
-  font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark);
   margin: 0 10px;
@@ -406,7 +412,8 @@ li {
 
 .text-search {
   color: var(--basic-dark);
-  padding: 29px 0 40px 0;
+  padding: 31px 0 40px 0;
+  line-height: 24px;
   position: relative;
   left: 1px;
   top: 3px;
@@ -433,7 +440,7 @@ li {
 }
 
 .button-text-opacity-search {
-  padding: 30px 125px;
+  padding: 35px 125px 25px;
 }
 
 .button-text-opacity-search:active {
@@ -444,7 +451,7 @@ li {
 
 .footer {
   height: 130px;
-  background-color: var(--basic-white);
+  background: rgba(255, 255, 255, 0.9);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 50px;
@@ -552,10 +559,6 @@ li {
   margin-left: auto;
 }
 
-.fields-control-item {
-  /* margin-top: 23px; */
-}
-
 .label-control {
   user-select: none;
   display: flex;
@@ -625,7 +628,7 @@ li {
   display: block;
   width: 2px;
   height: 22px;
-  background: white;
+  background: var(--basic-white);
   position: absolute;
   right: -4px;
   top: 5px;
@@ -685,10 +688,10 @@ li {
   width: 3px;
   height: 3px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-lighter-swamp);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-lightest-gray);
   cursor: pointer;
 }
 
@@ -830,7 +833,7 @@ li {
 }
 
 .sortedBlock-bottom-solid {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--basic-darker-gray);
 }
 
 .button-sortedBlock {
@@ -931,7 +934,7 @@ li {
 
 .query-form {
   position: absolute;
-  background: #fff;
+  background: var(--basic-white);
   padding: 55px 55px 50px;
   left: 0;
   right: 0;
@@ -965,35 +968,35 @@ li {
 .query-form__control-date {
   box-sizing: border-box;
   padding: 0 0 0 10px;
-  background: #f2f2f2;
-  border: 2px solid #f2f2f2;
+  background: var(--basic-lightest-dark);
+  border: 2px solid var(--basic-lightest-dark);
   flex-grow: 1;
 }
 
 .query-form__control-date:hover {
-  background: #ebebeb;
-  border: 2px solid #ebebeb;
+  background: var(--basic-darkest-gray);
+  border: 2px solid var(--basic-darkest-gray);
 }
 
 .query-form__control-date:focus {
   outline: none;
-  background: #fff;
-  border: 2px solid #e5e5e5;
+  background: var(--basic-white);
+  border: 2px solid var(--basic-darkest-gray);
 }
 
 .calendar-icon {
   position: absolute;
   right: 10px;
   cursor: pointer;
-  color: #a9a9a9;
+  color: var(--basic-lightest-brown);
 }
 
 .calendar-icon:hover {
-  color: #000;
+  color: var(--basic-black);
 }
 
 .calendar-icon:active {
-  color: #81b3d2;
+  color: var(--basic-blue);
 }
 
 .query-form__control-wrapper {
@@ -1001,8 +1004,8 @@ li {
 }
 
 .button-count {
-  background: #f2f2f2;
-  color: #a9a9a9;
+  background: var(--basic-lightest-dark);
+  color: var(--basic-lightest-brown);
   display: flex;
   align-items: center;
   padding: 14px;
@@ -1011,11 +1014,11 @@ li {
 }
 
 .button-count:hover {
-  color: #000;
+  color: var(--basic-black);
 }
 
 .button-count:active {
-  color: #81b3d2;
+  color: var(--basic-blue);
 }
 
 .query-form__control--count + .query-form__control--count {
@@ -1029,7 +1032,7 @@ li {
 }
 
 .query-form__control-number {
-  background: #f2f2f2;
+  background: var(--basic-lightest-dark);
   width: 30px;
   text-align: center;
   border: 0;
@@ -1049,16 +1052,16 @@ li {
   line-height: 26px;
   text-transform: uppercase;
   cursor: pointer;
-  background: #81b3d2;
-  color: #fff;
+  background: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .query-form__sumbit:hover {
-  background: #669ec0;
+  background: var(--basic-darker-blue);
 }
 
 .query-form__sumbit:active {
-  background: #5496bd;
+  background: var(--basic-darkest-blue);
   color: rgba(255, 255, 255, 0.3);
 }
 
